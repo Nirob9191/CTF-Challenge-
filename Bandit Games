@@ -1,0 +1,91 @@
+
+
+
+                                                          ......................... Bandit-Games .................................
+
+
+  */Bandit-games 
+
+ 0/   ssh bandit0@bandit.labs.overthewire.org -p 2220     => user bandit0 , password bandit0
+
+ 1/   ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If     => cat readme
+
+ 2/   263JGJPfgU6LtdEvgfWU1XP5yac29mFx     => cat ./-
+
+ 3/   MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx     =>( cat -- " --spaces in this filename--" or cat ./--spaces\ in\ this\ filename-- )  ==> You use -- to tell the command to stop treating anything after it as an option — and treat it as a filename instead.
+ 
+ 4/   2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ     => cat "...Hiding-From-You"  
+
+ 5/   4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw     => find . -type f -exec file {} + , cat ./-file07    ==> find the human readable file and read that file.
+
+ 6/   HWasnPhtq9AVKe0dmk45nxy20cvUa6EG     => find -type f -size 1033c 
+
+ 7/   morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj      = find / -type f -user bandit7 -group bandit6  2>/dev/null ==> 
+
+ 8/   dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+ 9/   4CKMh1JI91bUIZZPXDqGanal4xvAg0JM 
+
+10/   FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey      = strings file-name   =>  To find human-readable strings in a file or binary file, you can use the strings command
+
+11/   dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr      = echo "VGhlIHBhc3N3b3JkIGlzIGR0UjE3M2ZaS2IwUlJzREZTR3NnMlJXbnBOVmozcVJyCg" | base64 --decode  ==> 
+
+12/   7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4      = Learn Rot13 system (like  A -><- N , B -><- O ......etc )
+
+13/   FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn       = Have to learn (convert binaryformat and compression tools zip,gzip,bzip2, tar , etc ........) 
+                                                                                                                                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/ Game-8 ==>
+
+
+
+
+*/ Game-13 ==> 
+
+
+Level Goal:-
+
+The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed.
+For this level it may be useful to create a directory under /tmp in which you can work. Use mkdir with a hard to guess directory name. 
+Or better, use the command “mktemp -d”. Then copy the datafile using cp, and rename it using mv (read the manpages!)
+
+
+. cp the file any where   
+. convert to binary format  ==> xxd -r file > file.01(.gz)
+. file file-name (command) 
+. decompress by gzip        ==> gzip -d file.gz  = gz extention must 
+. file file-name (command)
+. decompress by bzip2       ==> bzip2 -d file
+ ------------------
+. file filne-name(command)
+. tar xvf file-name 
+------------------
+ ------------------
+ -------------------
+ ------------------
+. final result  = password ..............
+
+
+
+
+
