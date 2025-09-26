@@ -22,9 +22,9 @@
 
  7/   morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj      = find / -type f -user bandit7 -group bandit6  2>/dev/null ==> 
 
- 8/   dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+ 8/   dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc      => find . -exec grep -i "millionth" {} +  ==> It searches all files under the current directory for lines containing “millionth”, case-insensitively.
 
- 9/   4CKMh1JI91bUIZZPXDqGanal4xvAg0JM 
+ 9/   4CKMh1JI91bUIZZPXDqGanal4xvAg0JM      => sort data.txt | uniq -u
 
 10/   FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey      = strings file-name   =>  To find human-readable strings in a file or binary file, you can use the strings command
 
